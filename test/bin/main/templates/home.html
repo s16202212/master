@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th>id</th>
+												<th>题号</th>
+												<th>第一个数</th>
+												<th>符号</th>
+												<th>第二个数</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr th:each="math : ${math_list}">
+												<td th:text="${math.t_id}"></td>
+												<td th:text="${math.t_timu}"></td>
+												<td th:text="${math.t_num1}"></td>
+												<td th:text="${math.t_fuhao}"></td>
+												<td th:text="${math.t_num2}"></td>
+											</tr>
+										</tbody>
+									</table>
+
+
+								
+</body>
+</html>
